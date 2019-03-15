@@ -2,10 +2,10 @@ import urllib.request
 import os
 import music
 while True:
-    urllib.request.urlretrieve("http://mo.flussbuero.at/music/newfile.txt","newfile.txt")
-    file = open("newfile.txt","r")
+    urllib.request.urlretrieve("url_to_transmittion_text_file/nameOfYourFile.txt","nameOfYourFile.txt")
+    file = open("nameOfYourFile","r")
     name = file.read()
     name = name.lower()
     music.run(name)
-    os.remove("newfile.txt")
+    os.remove("nameOfYourFile.txt")
     
